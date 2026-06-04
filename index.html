@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RevisaCar — Manutenção do seu carro, simples assim</title>
+  <link rel="icon" type="image/png" href="icon/appicon.png" />
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -76,14 +77,12 @@
       flex-shrink: 0;
     }
 
-    .nav-logo-icon svg {
-      width: 20px;
-      height: 20px;
-      stroke: white;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    .nav-logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
     }
 
     .nav-logo-text {
@@ -835,14 +834,12 @@
       justify-content: center;
     }
 
-    .footer-logo-icon svg {
-      width: 18px;
-      height: 18px;
-      stroke: white;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    .footer-logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
     }
 
     .footer-logo-text {
@@ -933,14 +930,12 @@
       flex-shrink: 0;
     }
 
-    .logo-icon svg {
-      width: 28px;
-      height: 28px;
-      fill: none;
-      stroke: #ffffff;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    .logo-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
     }
 
     .app-name {
@@ -1177,14 +1172,12 @@
       box-shadow: 0 4px 16px rgba(28,110,243,0.35);
     }
 
-    .dl-app-icon svg {
-      width: 38px;
-      height: 38px;
-      stroke: white;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    .dl-app-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+      display: block;
     }
 
     .dl-app-name {
@@ -1198,25 +1191,6 @@
       font-size: 13px;
       color: var(--gray-500);
       margin-bottom: 6px;
-    }
-
-    .dl-stars {
-      display: flex;
-      align-items: center;
-      gap: 2px;
-    }
-
-    .dl-stars svg {
-      width: 14px;
-      height: 14px;
-      fill: #f59e0b;
-    }
-
-    .dl-stars span {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--gray-700);
-      margin-left: 4px;
     }
 
     .dl-badges {
@@ -1408,10 +1382,7 @@
       <!-- Logo -->
       <button class="nav-logo" onclick="switchTab('home')" aria-label="Ir para Home">
         <div class="nav-logo-icon">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/>
-            <circle cx="12" cy="9" r="2.5"/>
-          </svg>
+          <img src="icon/appicon.png" alt="RevisaCar" />
         </div>
         <span class="nav-logo-text">RevisaCar</span>
       </button>
@@ -1510,15 +1481,6 @@
             <p>Receba notificações antes que a revisão vença. Troca de óleo, pneus, correia — nada passa em branco.</p>
           </div>
 
-          <!-- Card 3 -->
-          <div class="benefit-card">
-            <div class="benefit-icon" style="background: #fff7ed;">
-              <svg viewBox="0 0 24 24" stroke="#f97316"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <h3>Lembretes por km</h3>
-            <p>Configure alertas por quilometragem rodada. O app avisa quando for hora de realizar a próxima manutenção.</p>
-          </div>
-
           <!-- Card 4 -->
           <div class="benefit-card">
             <div class="benefit-icon" style="background: #fdf4ff;">
@@ -1535,6 +1497,24 @@
             </div>
             <h3>Dados seguros</h3>
             <p>Seus dados ficam armazenados com segurança no seu dispositivo. Privacidade em primeiro lugar.</p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="benefit-card">
+            <div class="benefit-icon" style="background: #fff7ed;">
+              <svg viewBox="0 0 24 24" stroke="#f97316"><path d="M19 7l-1.5 9a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M11 11v4"/><path d="M13 11v4"/></svg>
+            </div>
+            <h3>Controle de combustível</h3>
+            <p>Registre abastecimentos, acompanhe consumo médio e visualize seus gastos com combustível ao longo do tempo.</p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="benefit-card">
+            <div class="benefit-icon" style="background: #fdf4ff;">
+              <svg viewBox="0 0 24 24" stroke="#a855f7"><path d="M12 3l2.4 4.8 5.3.8-3.8 3.7.9 5.2-4.8-2.5-4.8 2.5.9-5.2-3.8-3.7 5.3-.8L12 3z"/><path d="M12 22v-3"/></svg>
+            </div>
+            <h3>Mecânico IA</h3>
+            <p>Receba ajuda inteligente para entender sintomas, prevenir problemas e cuidar melhor do seu veículo no dia a dia.</p>
           </div>
         </div>
       </div>
@@ -1555,7 +1535,7 @@
           <div class="step">
             <div class="step-number">1</div>
             <h3>Cadastre seu veículo</h3>
-            <p>Adicione marca, modelo, ano e quilometragem atual. Leva menos de 1 minuto.</p>
+            <p>Informe a placa do veículo e o app identifica os dados para você. Leva menos de 1 minuto.</p>
           </div>
 
           <div class="step">
@@ -1628,8 +1608,8 @@
               <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
             <div class="feature-text">
-              <h4>Controle de gastos</h4>
-              <p>Saiba exatamente quanto gasta com manutenção por mês e por ano.</p>
+              <h4>Controle de combustível</h4>
+              <p>Registre abastecimentos, acompanhe consumo e tenha visão clara do custo por km.</p>
             </div>
           </div>
 
@@ -1648,20 +1628,11 @@
               <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
             <div class="feature-text">
-              <h4>Interface intuitiva</h4>
-              <p>Design limpo e fácil de usar. Sem curva de aprendizado, sem complicação.</p>
+              <h4>Mecânico IA</h4>
+              <p>Um assistente inteligente para tirar dúvidas e orientar os cuidados com o veículo.</p>
             </div>
           </div>
 
-          <div class="feature-item">
-            <div class="feature-check">
-              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            <div class="feature-text">
-              <h4>Armazenamento local</h4>
-              <p>Seus dados ficam no seu dispositivo. Funciona offline, sem depender da internet.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -1693,10 +1664,7 @@
           <div class="footer-brand">
             <div class="footer-logo">
               <div class="footer-logo-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/>
-                  <circle cx="12" cy="9" r="2.5"/>
-                </svg>
+                <img src="icon/appicon.png" alt="RevisaCar" />
               </div>
               <span class="footer-logo-text">RevisaCar</span>
             </div>
@@ -1748,10 +1716,7 @@
         <header>
           <div class="logo-area">
             <div class="logo-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/>
-                <circle cx="12" cy="9" r="2.5"/>
-              </svg>
+              <img src="icon/appicon.png" alt="RevisaCar" />
             </div>
             <span class="app-name">RevisaCar</span>
           </div>
@@ -1886,22 +1851,11 @@
         <div class="dl-card">
           <div class="dl-app-info">
             <div class="dl-app-icon">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/>
-                <circle cx="12" cy="9" r="2.5"/>
-              </svg>
+              <img src="icon/appicon.png" alt="RevisaCar" />
             </div>
             <div>
               <h2 class="dl-app-name">RevisaCar</h2>
               <div class="dl-app-meta">Manutenção do seu veículo</div>
-              <div class="dl-stars">
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <span>4.8</span>
-              </div>
             </div>
           </div>
 
@@ -1943,6 +1897,24 @@
               <div>
                 <strong>Alertas inteligentes</strong>
                 <span>Notificações antes que a revisão vença</span>
+              </div>
+            </li>
+            <li>
+              <div class="dl-feat-icon" style="background:#fff7ed;">
+                <svg viewBox="0 0 24 24" stroke="#f97316"><path d="M19 7l-1.5 9a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5 7"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M11 11v4"/><path d="M13 11v4"/></svg>
+              </div>
+              <div>
+                <strong>Controle de combustível</strong>
+                <span>Acompanhe abastecimentos e consumo médio</span>
+              </div>
+            </li>
+            <li>
+              <div class="dl-feat-icon" style="background:#fdf4ff;">
+                <svg viewBox="0 0 24 24" stroke="#a855f7"><path d="M12 3l2.4 4.8 5.3.8-3.8 3.7.9 5.2-4.8-2.5-4.8 2.5.9-5.2-3.8-3.7 5.3-.8L12 3z"/><path d="M12 22v-3"/></svg>
+              </div>
+              <div>
+                <strong>Mecânico IA</strong>
+                <span>Orientações inteligentes para cuidar melhor do veículo</span>
               </div>
             </li>
             <li>
